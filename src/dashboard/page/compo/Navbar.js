@@ -30,8 +30,7 @@ function Navbar() {
           </div>
           <div>
           <div className='flex mr-10 mt-4'>
-            <p className=' text-white mt-2 mr-6'>
-            {user === "zakaria@gmail.com" ? <p>Riad Zakaria</p>:<p>Drhourhi Adam </p> }</p>
+            <p className=' text-white mt-2 mr-6'> Riad Zakaria </p>
            <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-4--v1.png" alt="avatar" className="avatar rounded-circle" />
            </div> 
         </div>
