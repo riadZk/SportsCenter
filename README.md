@@ -15,7 +15,7 @@ Clone the project and access the folde :
 ```
 # Start the project
 ```
-## `npm start`
+`npm start`
 ```
 
 <div>
