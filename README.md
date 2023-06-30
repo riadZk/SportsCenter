@@ -9,9 +9,9 @@ This project was developed using the following technologies:
 
 Clone the project and access the folde :
 ```
-## git init 
-## git clone https://github.com/riadZk/owenshop.git
-## cd owenshop
+ git init 
+ git clone https://github.com/riadZk/owenshop.git
+ cd owenshop
 ```
 # Start the project
 ```
