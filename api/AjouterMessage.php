@@ -25,8 +25,6 @@ $image =  $_POST['message'];
 $stmt = $conn->prepare("INSERT INTO message (user,email,message) 
  VALUES ('$nom','$price','$image')");
 
-
-
 if ($stmt->execute()) {
 
     $response = array('message' => 'New record inserted successfully');
