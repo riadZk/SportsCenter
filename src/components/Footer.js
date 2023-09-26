@@ -7,7 +7,6 @@ const Footer = () => {
 <footer className="bg-white dark:bg-Cdark8">
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div className="flex justify-center">
-                {/* <span className="self-center text-pink-400 text-2xl font-semibold whitespace-nowrap dark:text-white">owenshop</span> */}
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
                     <a href="#" className="mr-4 hover:underline md:mr-6 ">Shop</a>

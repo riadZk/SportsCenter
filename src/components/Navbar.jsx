@@ -8,6 +8,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { ShopContext } from "../context/shop-context";
 import {BsMoonStars} from 'react-icons/bs'
 import {MdOutlineLightMode} from 'react-icons/md'
+import Links from './data'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,16 +37,6 @@ const scrollPercentage = Math.round(
 const scrollIndicatorStyle = {
   width: `${scrollPercentage}%`
 };
-// function scrollValue() {
-//   var navbar = document.getElementById('navbar');
-//   var scroll = window.scrollY;
-//   if (scroll < 200) {
-//       navbar.classList.remove('BgColour');
-//   } else {
-//       navbar.classList.add('BgColour');
-//   }
-// }
-// window.addEventListener('scroll', scrollValue);
 const [users, setUsers] = useState([]);
 
 useEffect(() => {
@@ -81,9 +72,9 @@ useEffect(() => {
                 <button className="dropbtn border-none w-[120px] dark:text-white  text-gray-900 hover:text-gray-700 py-2 rounded-md text-md
                   font-medium">Shop <i className="fa fa-caret-down"></i></button>
                   <div className="dropdown-content">
-                     <ScrollLink to="product" spy={true} smooth={true} offset={50} duration={500} className="cursor-pointer" >Product</ScrollLink>
-                     <ScrollLink to="accessoire" spy={true} smooth={true} offset={50} duration={500} className="cursor-pointer" >Accessoire</ScrollLink>
-                     <ScrollLink to="clothes" spy={true} smooth={true} offset={50} duration={500} className="cursor-pointer" >clothes</ScrollLink>
+                      {Links.map(link =>{
+                        <ScrollLink key={link.id} to={link.to} spy={true} smooth={true} offset={50} duration={500} className={link.className} >{link.scrol}</ScrollLink>
+                      })}
               </div>
             </div>
                 <Link
